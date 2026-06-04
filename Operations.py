@@ -33,6 +33,7 @@ def clean_temp_dir_files():
         except Exception:
             continue
 
+# Calculate and display the final cleanup statistics
     Mb_saved = bytes_saved / (1024 * 1024)
     print("--- Cleanup Finished ---")
     print(f"Files deleted: {deleted_files_count}")
