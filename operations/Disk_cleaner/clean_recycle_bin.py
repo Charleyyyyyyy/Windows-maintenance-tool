@@ -24,11 +24,9 @@ def clean_recycle_bin():
         if result == 0:
             print("[+] Recycle Bin emptied successfully!")
         elif result == -2147418113:
-            print("[~] La corbeille est déjà vide.")
+            print("[~] Recycle Bin is already empty.")
         else:
             print(f"[-] Windows returned an error code: {result}")
             
     except Exception as e:
         print(f"[-] Failed to empty Recycle Bin: {e}")
-
-clean_recycle_bin()
